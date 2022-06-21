@@ -1,3 +1,8 @@
+html body{
+    height: 100vh;
+    overflow-y: scroll;
+}
+
 .menu{
     background-image: url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200);
     background-repeat: no-repeat;
@@ -16,4 +21,20 @@
     background-size: 30px;
     width: 40px;
     height: 40px;
+}
+
+.container{
+    padding-top: 100px;
+}
+
+.product{
+    width: fit-content;
+}
+
+.placeholder{
+    background-color: rgb(97, 97, 97);
+
+    display: inline-block;
+    width: 166px;
+    height: 250px;
 }
