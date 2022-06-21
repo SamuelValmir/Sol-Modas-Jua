@@ -1,0 +1,19 @@
+.menu{
+    background-image: url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 30px;
+    filter: invert();
+    width: 40px;
+    height: 40px;
+    
+}
+.cart-icon{
+    background-image: url(https://cdn2.bigcommerce.com/n-63unu/tr4ob1q0/templates/__custom/images/cart-ico-white.png?t=100000);
+    /* filter: invert(); */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 30px;
+    width: 40px;
+    height: 40px;
+}

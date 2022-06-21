@@ -1,0 +1,29 @@
+ Usuário {
+  Cliente{
+    Pedido{
+	  Pagamento
+	  Entrega
+    }
+    Avaliações
+  }
+}
+
+Loja{
+  Categorias{
+    Produtos{
+      Variações{
+        Quantidade
+      }
+      Avaliações
+      Pedidos
+    }
+  }
+}
+
+Categorias{
+Criança (vestido e conjunto)
+
+Mulher (saia, vestido, top, short, calça jeans)
+
+Homem (Short, Camisa)
+}
