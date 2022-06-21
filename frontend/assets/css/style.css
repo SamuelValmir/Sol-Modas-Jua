@@ -1,9 +1,14 @@
-html body{
-    height: 100vh;
-    overflow-y: scroll;
+html body {
+    height: 100%;
 }
 
-.menu{
+body{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(255, 209, 135) 100%);
+
+}
+
+.menu {
     background-image: url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200);
     background-repeat: no-repeat;
     background-position: 50%;
@@ -11,9 +16,10 @@ html body{
     filter: invert();
     width: 40px;
     height: 40px;
-    
+
 }
-.cart-icon{
+
+.cart-icon {
     background-image: url(https://cdn2.bigcommerce.com/n-63unu/tr4ob1q0/templates/__custom/images/cart-ico-white.png?t=100000);
     /* filter: invert(); */
     background-repeat: no-repeat;
@@ -23,18 +29,23 @@ html body{
     height: 40px;
 }
 
-.container{
+.container {
     padding-top: 100px;
 }
 
-.product{
+.product {
     width: fit-content;
 }
 
-.placeholder{
+.placeholder {
     background-color: rgb(97, 97, 97);
 
     display: inline-block;
     width: 166px;
     height: 250px;
+}
+
+footer ul li img {
+    width: 50px;
+    border-radius: 3px;
 }

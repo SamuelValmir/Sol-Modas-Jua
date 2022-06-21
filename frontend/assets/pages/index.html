@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <img class="background">
     <header class="fixed-top">
         <div class="header-container bg-dark text-light d-flex justify-content-between align-items-center p-2">
             <img class="menu" src="../img/icons/header/menu.svg" alt="" srcset="">
@@ -37,9 +38,7 @@
             <div class="product col">
                 <span class="placeholder"></span>
             </div>
-            <div class="product col">
-                <span class="placeholder"></span>
-            </div>
+
         </div>
 
         <div class="row gap-3">
@@ -49,14 +48,33 @@
             <div class="product col">
                 <span class="placeholder"></span>
             </div>
-            <div class="product col">
-                <span class="placeholder"></span>
-            </div>
+        
         </div>
     </div>
 
-    <footer>
-        <p> © 2022 Solange Jua Modas</p>
+    <footer class="bg-dark text-center p-3">
+
+        <ul class="list-unstyled d-flex justify-content-center gap-3">
+            <li class="payment-icon">
+                <img src="data:image/png;base64,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"
+                    alt="boleto" title="boleto">
+            </li>
+
+            <li class="payment-icon">
+                <img src="../img/icons/footer/mastercard.svg" alt="mastercard" title="mastercard">
+            </li>
+
+            <li class="payment-icon">
+                <img src="../img/icons/footer/paypal.svg" alt="paypal" title="paypal">
+
+            </li>
+
+            <li class="payment-icon">
+                <img src="../img/icons/footer/visa.svg" alt="visa" title="visa">
+            </li>
+        </ul>
+
+        <div class="text-light fst-italic"> © 2022 Solange Jua Modas. <br>Todos Os Direitos Reservados</div>
     </footer>
 </body>
 
