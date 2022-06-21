@@ -1,11 +1,21 @@
-html{
-    height: 100%;
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(255, 209, 135) 100%);
+html {
+    height: auto;
 }
 
-body{
-    height: 100vh;
+body {
+    height: 100%;
+
+}
+
+.background {
+    background: rgb(255, 255, 255, 1);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgb(255, 209, 135) 100%);
+    background-repeat: no-repeat;
+
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100px;
 }
 
 .menu {
@@ -44,7 +54,7 @@ body{
     height: 250px;
 }
 
-footer{
+footer {
     margin-top: auto;
 
 }
@@ -54,6 +64,6 @@ footer ul li img {
     border-radius: 3px;
 }
 
-.copyright{
+.copyright {
     background-color: rgb(29, 29, 29);
 }
