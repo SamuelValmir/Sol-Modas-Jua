@@ -1,11 +1,11 @@
-html body {
+html{
     height: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(255, 209, 135) 100%);
 }
 
 body{
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(255, 209, 135) 100%);
-
+    height: 100vh;
 }
 
 .menu {
@@ -21,7 +21,6 @@ body{
 
 .cart-icon {
     background-image: url(https://cdn2.bigcommerce.com/n-63unu/tr4ob1q0/templates/__custom/images/cart-ico-white.png?t=100000);
-    /* filter: invert(); */
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 30px;
@@ -45,7 +44,16 @@ body{
     height: 250px;
 }
 
+footer{
+    margin-top: auto;
+
+}
+
 footer ul li img {
     width: 50px;
     border-radius: 3px;
+}
+
+.copyright{
+    background-color: rgb(29, 29, 29);
 }
