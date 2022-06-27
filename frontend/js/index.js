@@ -8,5 +8,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 function resizeBackground(){
     const background = document.querySelector(".background");
-    background.style.height = document.documentElement.scrollHeight + "px";
+    const footer = document.querySelector("footer");
+
+    background.style.height = footer.offsetTop + "px";
 };
