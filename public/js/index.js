@@ -13,22 +13,36 @@ function resizeBackground() {
     background.style.height = footer.offsetTop + "px";
 };
 
-let dropdown = document.querySelector(".dropdown-toggle");
-let dropdownItems = document.querySelectorAll(".dropdown-menu .dropdown-item");
+let dropdownMenuList = document.querySelectorAll(".dropdown-menu");
+// let dropdownItems = document.querySelectorAll(".dropdown-menu .dropdown-item");
 
-dropdownItems.forEach(dropdownItem => {
-    dropdownItem.addEventListener("click", (item) => {
-        const dropdownItem = item.target;
+// It changes dropdown text when dropdown item is clicked
+dropdownMenuList.forEach(dropdownMenu => {
 
+    dropdownMenu.childNodes.forEach(dropdownItem => {
+        let dropdownMenuAriaLabelledBy = dropdownItem.parentElement.getAttribute("aria-labelledby");
+        let label = document.querySelector(`label[for=${dropdownMenuAriaLabelledBy}]`);
 
-        // It deactivates all dropdown items 
-        dropdownItems.forEach(dropdownItem => {
-            dropdownItem.classList.remove("active");
-        });
+        dropdownItem.addEventListener("click", () => {
+            if (dropdownItem.classList.contains("dropdown-item")) {
 
-        dropdownItem.classList.add("active");
-        dropdown.innerHTML = dropdownItem.innerHTML;
+                [...dropdownMenu.children].forEach(dropdownItem => {
+                    dropdownItem.classList.remove("active");
+                });
+  
+                dropdownItem.classList.add("active");
+                label.innerText = dropdownItem.innerHTML;
+            }
+        })
     })
+
 });
 
-console.log(dropdownItems)
+// It centralizes all dropdown menu
+document.querySelectorAll('.dropdown-toggle').forEach(dropdownToggle => {
+    new bootstrap.Dropdown(dropdownToggle, {
+        popperConfig: function () {
+            return { placement: 'bottom' }
+        }
+    });
+})

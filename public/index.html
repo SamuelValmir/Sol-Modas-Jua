@@ -38,31 +38,57 @@
             </a>
         </div>
         <div class="sidebar">
+
+            <div class="dropdown-container d-flex flex-row text-center bg-light">
+                <div class="dropdown w-100 p-1">
+                    <button class="btn dropdown-toggle w-100" id="dropdownClothes" role="button" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Roupas</button>
+                    <label for="dropdownClothes">Todas</label>
+
+                    <ul class="dropdown-menu p-2" aria-labelledby="dropdownClothes">
+                        <li class="dropdown-header">Feminina</li>
+                        <li class="dropdown-item active">Todas</li>
+                        <li class="dropdown-item">Shorts</li>
+                        <li class="dropdown-item">Calça Jeans</li>
+                        <li class="dropdown-item">Camisas</li>
+
+                        <div class="dropdown-divider"></div>
+
+                        <li class="dropdown-header">Masculina</li>
+                        <li class="dropdown-item">Todas</li>
+                        <li class="dropdown-item">Shorts</li>
+                        <li class="dropdown-item">Camisas</li>
+
+                        <div class="dropdown-divider"></div>
+
+                        <li class="dropdown-header">Infantil</li>
+                        <li class="dropdown-item">Todas</li>
+                        <li class="dropdown-item">Vestidos</li>
+                        <li class="dropdown-item">Shorts</li>
+                        <li class="dropdown-item">Camisas</li>
+                    </ul>
+                </div>
+
+                <div class="dropdown w-100 p-1">
+                    <button class="btn dropdown-toggle w-100" id="dropdownFilter" role="button" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Filtro</button>
+                    <label for="dropdownFilter">Aleatório</label>
+                    
+                    <ul class="dropdown-menu text-center dropdown-menu-center" aria-labelledby="dropdownFilter">
+                        <li class="dropdown-item active">Aleatório</li>
+                        <li class="dropdown-item">Adicionados Recentemente</li>
+                        <li class="dropdown-item">Mais Vendidos</li>
+                        <li class="dropdown-item">Mais Avaliados</li>
+                        <li class="dropdown-item">Alfabeto: A - Z</li>
+                        <li class="dropdown-item">Alfabeto: Z - A</li>
+                        <li class="dropdown-item">Preço: Menor - Maior</li>
+                        <li class="dropdown-item">Preço: Maior - Menor</li>
+                    </ul>
+                </div>
+            </div>
     </header>
 
-    <div class="container text-center mb-5">
-        <div class="dropdown mb-5">
-            <button class="btn dropdown-toggle" id="dropdownClothes" role="button" type="button"
-                data-bs-toggle="dropdown" aria-expanded="false">Todas</button>
-
-            <ul class="dropdown-menu p-2" aria-labelledby="dropdownClothes">
-                <li class="dropdown-item active">Todas</li>
-                <li class="dropdown-item">Shorts</li>
-                <li class="dropdown-item">Calça Jeans</li>
-                <li class="dropdown-item">Camisas</li>
-            </ul>
-        </div>
-
-        <div class="dropdown mb-5">
-            <button class="btn dropdown-toggle" id="dropdownGender" role="button" type="button"
-                data-bs-toggle="dropdown" aria-expanded="false">Feminina</button>
-
-            <ul class="dropdown-menu p-2" aria-labelledby="dropdownGender">
-                <li class="dropdown-item active">Feminina</li>
-                <li class="dropdown-item">Masculina</li>
-                <li class="dropdown-item">Infantil</li>
-            </ul>
-        </div>
+    <div class="container text-center mt-5 mb-5 ps-4 pe-4">
 
         <div class="row justify-content-around align-items-center gap-3">
             <div class="product btn col-1  text-center card border-0 p-0">
@@ -117,16 +143,20 @@
             </li>
 
             <li class="payment-icon">
-                <img src="./assets/img/icons/footer/mastercard.svg" alt="mastercard" title="mastercard">
+                <img src="./assets/img/icons/footer/pix-logo.webp" alt="Pix" title="Pix">
             </li>
 
             <li class="payment-icon">
-                <img src="./assets/img/icons/footer/paypal.svg" alt="paypal" title="paypal">
+                <img src="./assets/img/icons/footer/mastercard.svg" alt="Mastercard" title="Mastercard">
+            </li>
+
+            <li class="payment-icon">
+                <img src="./assets/img/icons/footer/paypal.svg" alt="PayPal" title="PayPal">
 
             </li>
 
             <li class="payment-icon">
-                <img src="./assets/img/icons/footer/visa.svg" alt="visa" title="visa">
+                <img src="./assets/img/icons/footer/visa.svg" alt="Visa" title="Visa">
             </li>
         </ul>
 
