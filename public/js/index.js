@@ -1,5 +1,6 @@
 window.addEventListener("resize", () => {
     resizeBackground();
+    resizeTextArea();
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -11,6 +12,13 @@ function resizeBackground() {
     const footer = document.querySelector("footer");
 
     background.style.height = footer.offsetTop + "px";
+};
+
+
+function resizeTextArea (){
+    const nameInput = document.querySelector("#name");
+    document.querySelector("#comment").style.width = nameInput.clientWidth +"px"
+    
 };
 
 let dropdownMenuList = document.querySelectorAll(".dropdown-menu");
@@ -45,4 +53,6 @@ document.querySelectorAll('.dropdown-toggle').forEach(dropdownToggle => {
             return { placement: 'bottom' }
         }
     });
-})
+});
+
+resizeTextArea();
